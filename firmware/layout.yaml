@@ -12,9 +12,9 @@ layers:
       # Row 1: Key 1 (Gemini Trigger), Key 2 (Claude Trigger), Quick File, Command Palette
       - ["ctrl-alt-shift-1", "ctrl-alt-shift-2", "ctrl-p", "ctrl-shift-p"]
       # Row 2: Format Document, Go to Definition, Rename, Toggle Terminal
-      - ["shift-alt-f", "f12", "f2", "ctrl-`"]
+      - ["shift-alt-f", "f12", "f2", "ctrl-grave"]
       # Row 3: Toggle Comment, Copy Line Down, Save, Undo
-      - ["ctrl-/", "shift-alt-down", "ctrl-s", "ctrl-z"]
+      - ["ctrl-slash", "shift-alt-down", "ctrl-s", "ctrl-z"]
     knobs:
       # Knob 1 (Upper Right): Volume control
       - ccw: "volumedown"
