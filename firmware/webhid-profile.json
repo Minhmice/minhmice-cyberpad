@@ -1,0 +1,28 @@
+{
+  "name": "minhmice-cyberpad",
+  "version": 1,
+  "vendorId": 4489,
+  "productId": 34882,
+  "layers": [
+    {
+      "buttons": [
+        "Ctrl+Alt+Shift+1",
+        "Ctrl+Alt+Shift+2",
+        "Ctrl+P",
+        "Ctrl+Shift+P",
+        "Shift+Alt+F",
+        "F12",
+        "F2",
+        "Ctrl+`",
+        "Ctrl+/",
+        "Shift+Alt+Down",
+        "Ctrl+S",
+        "Ctrl+Z"
+      ],
+      "knobs": [
+        { "ccw": "VolumeDown", "press": "Mute", "cw": "VolumeUp" },
+        { "ccw": "PrevTrack", "press": "PlayPause", "cw": "NextTrack" }
+      ]
+    }
+  ]
+}

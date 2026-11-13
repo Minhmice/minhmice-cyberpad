@@ -1,0 +1,52 @@
+# minhmice-cyberpad/firmware/layout.yaml
+# Hardware: VID 1189, PID 8842 (WCH CH57x family)
+# Orientation: Knobs on the right, buttons on the left
+model: ch57x-1
+orientation: normal
+rows: 3
+columns: 4
+knobs: 2
+
+layers:
+  - buttons:
+      # Row 1: Key 1 (Gemini Trigger), Key 2 (Claude Trigger), Quick File, Command Palette
+      - ["ctrl-alt-shift-1", "ctrl-alt-shift-2", "ctrl-p", "ctrl-shift-p"]
+      # Row 2: Format Document, Go to Definition, Rename, Toggle Terminal
+      - ["shift-alt-f", "f12", "f2", "ctrl-`"]
+      # Row 3: Toggle Comment, Copy Line Down, Save, Undo
+      - ["ctrl-/", "shift-alt-down", "ctrl-s", "ctrl-z"]
+    knobs:
+      # Knob 1 (Upper Right): Volume control
+      - ccw: "volumedown"
+        press: "mute"
+        cw: "volumeup"
+      # Knob 2 (Lower Right): Media playback
+      - ccw: "prev"
+        press: "play"
+        cw: "next"
+
+  - buttons:
+      # Layer 2 (Auxiliary / Navigation)
+      - ["ctrl-alt-shift-1", "ctrl-alt-shift-2", "alt-left", "alt-right"]
+      - ["ctrl-pageup", "ctrl-pagedown", "home", "end"]
+      - ["ctrl-c", "ctrl-v", "ctrl-x", "ctrl-y"]
+    knobs:
+      - ccw: "volumedown"
+        press: "mute"
+        cw: "volumeup"
+      - ccw: "prev"
+        press: "play"
+        cw: "next"
+
+  - buttons:
+      # Layer 3 (Window control)
+      - ["ctrl-alt-shift-1", "ctrl-alt-shift-2", "ctrl-win-left", "ctrl-win-right"]
+      - ["win-up", "win-down", "win-left", "win-right"]
+      - ["alt-tab", "win-tab", "win-d", "ctrl-w"]
+    knobs:
+      - ccw: "volumedown"
+        press: "mute"
+        cw: "volumeup"
+      - ccw: "prev"
+        press: "play"
+        cw: "next"
