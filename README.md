@@ -43,11 +43,14 @@ Script sẽ tự động copy `omp-extension/minhmice-cyberpad.ts` vào thư m�
 
 ### 2. Nạp cấu hình vào Chip Macro Pad
 
-#### Cách 1: Nạp bằng WebHID qua Trình duyệt (Khuyên dùng - GUI trực quan)
-1. Mở Chrome hoặc Edge truy cập: [Macropad Rebind (jvspier.github.io)](https://jvspier.github.io/macropad-rebind/)
-2. Bấm **Connect keypad** và chọn thiết bị `1189:8842`.
-3. Bấm **Import** và chọn file: `firmware/webhid-profile.json`.
-4. Bấm **Write to keypad** để ghi thẳng vào flash của chip.
+#### Cách 1: Nạp 1-Click Offline qua WebHID (Nhanh nhất & Độc lập mạng)
+Chạy file `open-configurator.bat`:
+1. Cửa sổ Edge/Chrome sẽ tự động mở `http://localhost:8088`.
+2. Bấm **Connect keypad** → chọn thiết bị `1189:8842`.
+3. Bấm **Import** → chọn file `firmware/webhid-profile.json`.
+4. Bấm **Write to keypad** để nạp thẳng vào flash chip.
+
+*(Hoặc truy cập trực tiếp online tại [jvspier.github.io/macropad-rebind](https://jvspier.github.io/macropad-rebind/))*
 
 #### Cách 2: Nạp bằng CLI
 Yêu cầu cài đặt `cargo install ch57x-keyboard-tool`:
